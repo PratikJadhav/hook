@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Coming Soon</title>		
+		<link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans" rel="stylesheet" />
+		<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<link href="css/style.css?v=0.2" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="js/PageTransitions/css/component.css" />
+		<link rel="stylesheet" type="text/css" href="js/PageTransitions/css/animations.css" />
+		<script src="js/PageTransitions/js/modernizr.custom.js"></script>
+	</head>
+	<body>
+		<div class="hook"></div>
+		<div id="pt-main" class="pt-perspective">
+			<div class="pt-page" id="page1">
+				<div id="hangers">
+					<div class="hangers hh1" id="hh1"></div>
+					<div class="hangers hh2" id="hh2"></div>					
+					<div class="hangers hh3" id="hh3"></div>
+					<div class="hangers hh4" id="hh4"></div>
+				</div>
+				<div class="coming_soon Futura-Dem">Coming Soon</div>
+				<div class="text-center notifyBox">
+					<input type="email" name="notifiedEmail1" id="notifiedEmail1"  class="notifiedEmail"  />
+					<button class="btn Futura-Dem minusmarginbtn" id="getNotified1">GET NOTIFIED</button>
+					<div class="hideinmobile">
+						<a href="https://www.facebook.com/intelligencenode/?fref=ts"><i class="fa fa-facebook socialIcon f" aria-hidden="true"></i></a>
+						<a href="https://twitter.com/@bigdataNODE"><i class="fa fa-twitter socialIcon t" aria-hidden="true"></i></a>					
+					</div>
+				</div>
+				<div class="scroller">
+					<div data-animation="3" id="scrolldown"  class="scroll-down"></div>
+				</div>
+				<!--a data-animation="3" id="scrolldown" class="scroll-down">
+					<i class="icon"></i>					
+				</a-->
+			</div>			
+			<div class="pt-page"  id="page2">
+				<div class="row" id="cs_bottom_page">
+					<div class="col-md-6 col-sm-12 col-lg-6 col-xs-12" id="imgBox">
+						<div class="imgBox">
+							<img src="images/happy_girl.png" class="aboutImg" />
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-12 col-lg-6 col-xs-12" id="aboutBox">
+						<div class="about Futura-Boo">about</div>
+						<div class="coming_soon_txt">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non auctor felis. Integer venenatis ultrices bibendum. Nulla volutpat id augue a sodales. Morbi elementum lectus ligula, in tempus justo pharetra nec. Mauris consequat varius risus, vel molestie velit scelerisque non. Fusce rutrum porta tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+							<p>Suspendisse lobortis rhoncus augue, nec aliquam sem interdum quis. Nulla ullamcorper enim scelerisque tincidunt consectetur. Sed pulvinar varius orci, sit amet mollis massa euismod eu. Vivamus maximus ut mi ac ultricies. Quisque faucibus turpis quis auctor eleifend. Vivamus eu lorem at lorem porttitor congue.</p>
+							<button class="btn Futura-Dem" id="secondPageBtn" onclick="javascript:$('#notifiedEmail1').focus();">GET NOTIFIED</button> 
+						</div>
+						<div class="col-sm-12 col-xs-12 onlyvisibleinSmall" >
+							<input type="email" name="notifiedEmail2" id="notifiedEmail2"  class="notifiedEmail"  />
+							<button class="btn Futura-Dem" id="getNotified2">GET NOTIFIED</button>
+							<div>
+								<a href="https://www.facebook.com/intelligencenode/?fref=ts"><i class="fa fa-facebook socialIcon f" aria-hidden="true"></i></a>
+								<a href="https://twitter.com/@bigdataNODE"><i class="fa fa-twitter socialIcon t" aria-hidden="true"></i></a>
+							</div>
+							<div class="footerMsg">Made in <i class="fa fa-heart heartColor" aria-hidden="true"></i> with Fashion</div>
+							<div class="copyright"><a href="#">Terms &amp; Conditions</a></div>
+							<div class="copyright"><a href="#">Privacy Policy</a></div>
+							<div class="copyright">Copyrights &copy; to hook 2016</div>
+						</div>
+
+						<div class="row footerLinks footerLinkMargintop">
+							<div class="col-md-12 col-sm-12 noleftpadding">
+								<div class="footerMsg" id="footerMsg">Made in <i class="fa fa-heart heartColor" aria-hidden="true"></i> with Fashion</div>
+							</div>
+						</div>
+						<div class="row footerLinks">
+							<div class="col-xs-12 col-md-4 col-sm-5 col-lg-7 copyright noleftpadding" id="copyrights">Copyrights &copy; to hook 2016</div>
+							<div class="col-xs-12 col-md-4 col-sm-3 col-lg-2 copyright" id="privacy"><a href="#">Privacy Policy</a></div>							
+							<div class="col-xs-12 col-md-4 col-sm-4 col-lg-3 copyright" id="terms"><a href="#">Terms &amp; Conditions</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+		<script src="js/PageTransitions/js/jquery.dlmenu.js"></script>	
+		<script>
+		if (screen && screen.width < 1025 ) {
+		  document.write('<script type="text/javascript" src="js/jquery.touchSwipe.min.js"><\/script>');
+		}
+		</script>		
+		
+		<script src="js/PageTransitions/js/pagetransitions.js?v=0.2"></script>
+		<script type="text/javascript" src="js/jquery.gritter.min.js"></script>
+		
+		<link href="css/jquery.gritter.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="js/custom.js?v=0.1"></script>
+	</body>
+</html>
